@@ -36,10 +36,30 @@ body{
 	transition: .3s ease;
 }
 
+#navbar .nav-item{
+	padding: 0 10px;
+}
+
+#navbar .nav-item.active{
+	background: white;
+	border-radius: 4px;
+}
+
+#navbar .nav-item.active a{
+	color: black;
+}
+
+#navbar .nav-item.active p::first-letter{
+	color: red;
+	font-size: 18px;
+	text-transform: capitalize;
+}
+
 #navbar .nav-item a{
 	font-family: 'Poppins light', sans-serif;
 	letter-spacing: .75px;
 }
+
 
 #headline{
 	background: black;
@@ -98,45 +118,41 @@ body{
 	background: red;
 }
 
-.circle1{
+.circle1,.circle2,.circle3{
 	position: absolute;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.circle1{
 	top: -15px;
 	left: 33%;
-	border: 30px solid rgba(255,255,255,0.3);
+	border: 30px solid rgba(150,150,150,0.3);
 	height: 30px;
 	width: 30px;
-	z-index: 1;
-	border-bottom: 30px solid black;
-	border-radius: 50%;
+	border-bottom: 30px solid rgb(150,150,150,0.7);
 	animation: rotate 7s ease-in-out infinite ;
 }
 
 .circle2{
-	position: absolute;
 	left: -20px;
 	bottom: 13%;
-	border: 60px solid rgba(255,255,255,0.3);
+	border: 60px solid rgba(150,150,150,0.3);
 	height: 60px;
 	width: 60px;
-	border-left: 60px solid black;
-	border-radius: 50%;
-	z-index: 1;
+	border-left: 60px solid rgb(150,150,150,0.7);
 	animation: rotate 11s ease-in-out infinite;
 }
 
 .circle3{
-	position: absolute;
 	right: -0;
 	top: 23%;
-	border: 40px solid rgba(255,255,255,0.3);
+	border: 40px solid rgba(150,150,150,0.3);
 	height: 40px;
 	width: 40px;
-	border-right: 40px solid black;
-	border-radius: 50%;
-	z-index: 1;
+	border-right: 40px solid rgb(150,150,150,0.7);
 	animation: rotate 13s ease-in-out infinite;
 }
-
 
 .nav-toggle{
 	display: none;
@@ -150,7 +166,6 @@ body{
 		transform: rotateZ(360deg);
 	}
 }
-
 
 @media only screen and (max-width: 640px){
 	#headline .hline .head *{
@@ -169,20 +184,27 @@ body{
 		bottom: 0;
 		width: 100%;
 		height: 100vh;
-		padding: 50% 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		text-align: center;
 		background: black;
 		clip-path: circle(0);
 	}
 	
 	#navbar .menu.active{
-		display: block;
 		pointer-events: all;
 		clip-path: circle(100%);
 	}
 
 	#navbar .nav-item{
-		margin: 10px;
+		margin: 15px;
+	}
+
+	#navbar .nav-item p{
+		padding: 0 30px;
+		font-size: 16px;
+		letter-spacing: .9px;
 	}
 
 	.nav-toggle{
@@ -198,6 +220,7 @@ body{
 		width: 50px;
 		height: 50px;
 		display: flex;
+		border-radius: 7px;
 		position: relative;
 		flex-direction: column;
 		background: transparent;
