@@ -4,8 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-
+	<link rel="stylesheet" href="./css/system.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./fontawesome/css/all.css">
 	<!-- EDITABLE -->
 	<title></title>
 	<script src="./js/jquery-3.5.1.slim.min.js"></script>
@@ -18,32 +19,44 @@
 		<!-- !//sLoad -->
 		<div id="loading-bar"></div>
 		<!-- !//eLoad -->
+		<div id="page-transition"></div>
+		<!--  -->
 
+		<div class="additional">
+			<div class="circle1"></div>
+			<div class="circle2"></div>
+			<div class="circle3"></div>
+		</div>
 		<nav id="navbar" class="container">
 			<div class="brand">
 				<a href="#"><img src="./img/logo.png" alt="logo"></a>
 			</div>
 			<ul class="menu">
 				<li class="nav-item active">
-					<a href="#" class="nav-link"><p>home</p></a>
+					<a href="#headline" class="nav-link"><p>home</p></a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link"><p>profile</p></a>
+					<a href="#about" class="nav-link"><p>about</p></a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link"><p>contact</p></a>
+					<a href="#services" class="nav-link"><p>services</p></a>
+				</li>
+				<li class="nav-item">
+					<a href="#contact" class="nav-link"><p>contact</p></a>
 				</li>
 			</ul>
 		</nav>
-		
+
 		<div class="nav-toggle">
 			<div class="toggle">
 				<div class="line1"></div>
 				<div class="line2"></div>
 			</div>
 		</div>
+		<!--  -->
 
-		<div id="headline" class="container toBtm">
+		<!--  -->
+		<div id="headline" class="section container toBtm">
 			<div class="hline">
 				<h1 class="head">
 					<img src="./img/logo-name.svg">
@@ -51,21 +64,34 @@
 				<h3 class="job">Web Developer and UI/UX Designer</h3>
 			</div>
 			<div class="button-group">
-				<a href="#" class="btn">contact me</a>
-				<a href="#" class="btn-outline">download cv</a>
-			</div>
-			<div class="additional">
-				<div class="circle1"></div>
-				<div class="circle2"></div>
-				<div class="circle3"></div>
+				<a href="#" class="btn">know me more</a>
+				<a href="#" class="btn-outline">hire me</a>
 			</div>
 		</div>
+		<!--  -->
 
-				
-		<div id="profile">
-			
+		<!--  -->
+		<div id="about" class="section container hide">
+			<div class="about">
+				<div class="head-profile">
+					<h2>ABOUT</h2>
+					<p>Who am i?</p>
+				</div>
+				<div class="body-profile">
+					<span class="name">Febriansyah</span>
+					<span class="habit">Ambitious, and Fast Learning</span>
+					<span class="hobby">Like Learning All About Computer</span>
+				</div>
+				<div class="link-profile">
+					<a class="link" href="#">
+						<span>Let's Know Me More</span>
+						<div class="arrow"></div></a>
+				</div>
+			</div>
+
+			<img src="./img/me.png" class="img-profile col-2">
 		</div>
-		
+		<!--  -->
 
 		<!-- !//sContact -->
 		<div id="contact"></div>
