@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Open+Sans:wght@300;400;700&display=swap');
+
 *{
 	margin: 0;
 	padding: 0;
@@ -120,8 +122,9 @@ body{
 	text-align: right;
 }
 .button .close{
-	font-family: "open sans black", sans-serif;
+	font-family: "open sans", sans-serif;
 	background: #e88;
+	font-weight:700;
 	border: 1px solid #e88;
 	padding: 4px 10px;
 	cursor: pointer;
