@@ -7,36 +7,25 @@
 	to{transform: rotateZ(360deg);}
 }
 
-@keyframes hide{
-	from{
-		pointer-events: all;
-		clip-path: circle(100%);
-	}
-	to{
-		pointer-events: none;
-		clip-path: circle(0);
-		display: none;
-	}
-}
-
 @keyframes transisi{
 	from{
+		background: black;
 		clip-path: circle(0);
 	}
 	to{
+		background: white;
 		clip-path: circle(100%);
 	}
 }
 
 #page-transition.active{
-	background: black;
 	height: 100vh;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 97;
-	animation: transisi .3s forwards;
+	z-index: 99;
+	animation: transisi .3s linear forwards;
 }
 
 /* --------------
@@ -127,9 +116,9 @@
 }
 
 .circle1,.circle2,.circle3{
-	position: absolute;
+	position: fixed;
 	border-radius: 50%;
-	z-index: 99;
+	z-index: 96;
 }
 
 .circle1{
@@ -181,6 +170,9 @@
 	font-weight: 700;
 	font-size: 4rem;
 	letter-spacing: 1.5px;
+}
+#about .about .head-profile h2::first-letter{
+	color: red;
 }
 
 #about .about .head-profile p{
@@ -290,6 +282,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		z-index: 99;
 		text-align: center;
 		background: var(--color-black);
 		clip-path: circle(0);
@@ -385,7 +378,7 @@
 
 	#about .about .link-profile{
 		
-		margin-left: 80px;
+		margin-left: 60px;
 	}
 
 @media only screen and (max-width: 480px){
