@@ -6,6 +6,13 @@ $(window).click(() =>{
 
 	};
 });
+
+$("#kirim").on('click', (e)=>{
+	e.preventDefault;
+	location.href = "https://api.whatsapp.com/send/?phone=6289634477490&text=subjek:"
+	+$("input[name='text-subject']").val() +"Context:"+ $("textarea[name='text-body']").val();
+});
+
 $(window).on('hashchange', ()=>{
     $("#page-transition").addClass("active");
 	setTimeout(()=>{

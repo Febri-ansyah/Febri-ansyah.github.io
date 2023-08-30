@@ -299,6 +299,7 @@
 }
 
 #contact .contact .contact-header .icon-group i{
+	margin-top: 25px;
 	margin-right: 10px;
 	height: 50px;
 }
@@ -328,6 +329,7 @@
 	margin-bottom: 20px;
 	resize: none;
 }
+
 
 
 @media only screen and (max-width: 640px){
@@ -444,11 +446,32 @@
 		margin-left: 60px;
 	}
 
+	#contact{
+		height: 130vh;
+	}
+
+	#contact .contact .contact-header h2{
+		font-size: 3rem;
+	}
+
+	#contact .contact{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#contact .contact .contact-input{
+		margin-top: 30px;
+		margin-left: 0;
+		width: 300px;
+	}	
+
 @media only screen and (max-width: 480px){
 	#headline .hline .head *{
 		width: 85%;
 	}
+	
 	#headline .button-group{
 		width: 100%;
 	}
+
 }
